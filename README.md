@@ -232,9 +232,10 @@ Advantages:
 ![Stage1](images/1_PdfRawTextTraining_2.png)
 ![Stage1](images/1_PdfRawTextTraining_3.png)
 
-STAGE 2 - INSTRUCTION FINE-TUNING RESULTS
-![alt text](image-1.png)
-![alt text](image-5.png)
+## STAGE 2: INSTRUCTION FINE-TUNING RESULTS
+![Stage2](images/2_SFT_Training_1.png)
+![Stage2](images/2_SFT_Training_2.png)
+![Stage2](images/2_SFT_Training_3.png)
 
 STAGE 3: LOAD STAGE 2 MERGED MODEL AND DPO
 ![alt text](image.png)
