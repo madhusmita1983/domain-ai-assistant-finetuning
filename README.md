@@ -1,5 +1,3 @@
-# domain-ai-assistant-finetuning
-domain-ai-assistant-finetuning
 # IT Helpdesk LLM Fine-Tuning using LoRA, QLoRA, SFT, and DPO
 
 ## 1. Project Title
