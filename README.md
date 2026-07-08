@@ -230,6 +230,7 @@ Advantages:
 ## STAGE 1: PDF RAW TEXT TRAINING Screenshots
 ![Stage1](images/1_PdfRawTextTraining_1.png)
 ![Stage1](images/1_PdfRawTextTraining_2.png)
+![Stage1](images/1_PdfRawTextTraining_3.png)
 
 STAGE 2 - INSTRUCTION FINE-TUNING RESULTS
 ![alt text](image-1.png)
