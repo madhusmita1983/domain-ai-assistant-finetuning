@@ -231,6 +231,10 @@ Advantages:
 ![images](images/1_PDF RAW TEXT TRAINING_1.png)
 ![STAGE 1: PDF RAW TEXT TRAINING Screenshots](images/1_PDF RAW TEXT TRAINING_2.png)
 
+## Architecture Diagram
+![Stage1](images/architecture.png)
+![Architecture](images/architecture.png)
+
 STAGE 2 - INSTRUCTION FINE-TUNING RESULTS
 ![alt text](image-1.png)
 ![alt text](image-5.png)
