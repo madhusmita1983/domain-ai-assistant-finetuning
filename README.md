@@ -237,9 +237,13 @@ Advantages:
 ![Stage2](images/2_SFT_Training_2.png)
 ![Stage2](images/2_SFT_Training_3.png)
 
-STAGE 3: LOAD STAGE 2 MERGED MODEL AND DPO
-![alt text](image.png)
-![alt text](image-6.png)
+## STAGE 3: LOAD STAGE 2 MERGED MODEL AND DPO
+![Stage3](images/3_DPO_Training_1.png)
+![Stage3](images/3_DPO_Training_2.png)
+![Stage3](images/3_DPO_Training_3.png)
+![Stage3](images/3_DPO_Training_4.png)
+![Stage3](images/3_DPO_Training_5.png)
+![Stage3](images/3_DPO_Training_6.png)
 ---
 
 # 11. Before vs After Output Comparison
