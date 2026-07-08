@@ -255,7 +255,7 @@ Advantages:
 - Incorrect troubleshooting
 - Poor enterprise alignment
 
-![alt text](image-7.png)
+![BaseModel](images/4_base_model_reponse.png)
 
 ---
 
@@ -272,7 +272,7 @@ Remaining Issues
 - Placeholder information
 - Occasional hallucinations
 
-![alt text](image-8.png)
+![BaseVsSFT](images/4_BaseVsSFT_model_response.png)
 
 
 ---
@@ -286,7 +286,7 @@ DPO Model Improvements:
 - Improved security recommendations
 - Better human preference alignment
 
-![alt text](image-9.png)
+![BaseVsSFTVsDPO](images/4_BaseVsSFTVsDPO_response.png)
 ---
 
 ## Overall Summary
