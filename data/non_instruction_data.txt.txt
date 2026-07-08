@@ -1,0 +1,199 @@
+Users frequently encounter password expiration prompts due to the standard ninety-day security policy enforcement required by organizational compliance standards.
+
+When a user forgets their active directory password, they should first attempt to use the self-service password reset portal before contacting the helpdesk.
+
+The self-service portal requires the user to have previously registered their security questions or an alternate authentication method such as a mobile phone.
+
+If an account becomes locked after five consecutive failed login attempts, it will automatically unlock after thirty minutes without intervention.
+
+Helpdesk technicians can manually unlock accounts in the Active Directory administrative center upon verifying the user's identity through secondary channels.
+
+Identity verification for manual password resets involves asking the user for their employee ID, manager's name, or a predetermined security pin.
+
+Passwords must meet complexity requirements, including at least twelve characters, one uppercase letter, one number, and one special symbol to be accepted.
+
+A common issue during password resets is the user's cached credentials on their local machine failing to synchronize with the primary domain controller.
+
+To resolve cached credential issues, users connected remotely must establish a VPN connection before locking and unlocking their workstation with the new password.
+
+Multi-factor authentication is a mandatory security layer required for all external access to corporate resources and cloud applications to prevent unauthorized logins.
+
+The primary MFA method deployed across the organization utilizes the Microsoft Authenticator app installed on the user's smartphone for push notifications.
+
+When a user replaces their personal mobile device, their existing MFA tokens do not automatically transfer to the new hardware due to security restrictions.
+
+To set up MFA on a new phone, the user must first contact the IT helpdesk to clear their previous device registrations from the Azure portal.
+
+Once the old device is removed, the user will be prompted to register their new device upon their next login attempt to any Office 365 service.
+
+Users experiencing delays in receiving SMS-based MFA codes are encouraged to switch to the push notification method via the authenticator app for faster response.
+
+In scenarios where a user is traveling internationally without cellular service, the authenticator app can still generate time-based one-time passwords offline.
+
+If a user accidentally denies an MFA prompt that they initiated, they must wait five minutes before the system allows another authentication attempt.
+
+Hardware security keys are provided as an alternative MFA solution for employees who operate in secure environments where mobile phones are strictly prohibited.
+
+The standard hardware lifecycle policy dictates that primary workstations and laptops are eligible for replacement every thirty-six months to maintain performance.
+
+Users experiencing persistent hardware failures, such as motherboard issues or recurring blue screens, can request an early laptop replacement pending diagnostics.
+
+To initiate a laptop replacement, a hardware request ticket must be submitted through the IT service management portal along with direct managerial approval.
+
+Prior to turning in their old laptop, users are responsible for ensuring all local files are backed up to their designated OneDrive cloud storage directory.
+
+The helpdesk imaging process utilizes Windows Autopilot to seamlessly provision new laptops with the required corporate software and endpoint security policies.
+
+If a laptop is physically damaged due to accidental drops or liquid spills, an incident report must be filed alongside the expedited replacement request.
+
+During the migration to a new laptop, users may notice that their browser bookmarks do not transfer unless they were logged into their enterprise browser profile.
+
+Old laptops returned to the IT department are held for a two-week quarantine period before being securely wiped and sent to an electronics recycling vendor.
+
+Temporary loaner laptops are available at the IT walk-up desk for users whose primary devices are undergoing extensive warranty repairs or diagnostics.
+
+Connecting to office network printers is streamlined through the centralized print management server, accessible via the company intranet portal.
+
+Users can manually add a network printer by typing the print server's hostname into the Windows file explorer address bar and double-clicking the desired printer.
+
+The centralized print queue is the recommended default, allowing users to release their print jobs at any physical printer by scanning their employee badge.
+
+A common printing failure occurs when the local print spooler service becomes stuck, which can often be resolved by restarting the service via the command prompt.
+
+If a printer is displaying an offline status on the user's computer, it may indicate a network connectivity issue or an IP address conflict on the local subnet.
+
+Mac users must download the specific manufacturer driver files before attempting to map to the enterprise print queues via the system preferences menu.
+
+Secure printing requires users to enter a customized four-digit PIN at the printer console to release confidential documents containing personally identifiable information.
+
+When encountering faded or streaky printouts, users should alert the helpdesk so that a technician can dispatch vendor support for toner replacement or drum maintenance.
+
+Clearing the print queue locally requires administrator privileges; therefore, standard users must contact the helpdesk if a corrupt print job is blocking the queue.
+
+When a laptop fails to detect an external monitor, the first troubleshooting step is to physically reseat the HDMI or DisplayPort cable connections on both ends.
+
+Docking stations are frequent failure points for display issues; power cycling the dock by unplugging its power adapter for ten seconds often resolves monitor detection failures.
+
+Users should verify that the external monitor is powered on and that the correct input source is selected using the physical buttons on the monitor's bezel.
+
+In Windows display settings, clicking the detect button forces the operating system to poll the graphics hardware for newly connected display devices.
+
+Outdated or corrupted graphics drivers are a common cause of external displays not being recognized after a recent operating system feature update.
+
+Updating the display adapters via the device manager is a standard helpdesk procedure for resolving persistent multi-monitor connectivity issues.
+
+If a monitor is detected but displays a black screen, the user may need to adjust the refresh rate to sixty hertz in the advanced display adapter properties.
+
+USB-C monitors require cables that support both power delivery and alternate display modes; using a standard charging cable will not transmit a video signal.
+
+Daisy-chaining multiple monitors requires that both the graphics card and the primary monitor support multi-stream transport functionality natively.
+
+Microsoft Outlook may crash unexpectedly if the local offline storage table file becomes corrupted or exceeds its maximum allocated size limit.
+
+Running Outlook in safe mode bypasses all third-party add-ins, which is crucial for isolating the root cause of application freezes and unexpected closures.
+
+A frequent cause of Outlook instability is the presence of outdated or incompatible plugins, such as legacy PDF creators or obsolete conferencing extensions.
+
+If Outlook hangs on the processing splash screen, it usually indicates a synchronization conflict between the local email client and the cloud Exchange server.
+
+Repairing the Microsoft Office installation through the Windows control panel can resolve missing dynamic link library files that cause Outlook to terminate abruptly.
+
+Rebuilding the Windows Search index is a necessary step when Outlook search functionality stops returning results or causes the application to lock up entirely.
+
+Helpdesk technicians may need to create a new Outlook profile for the user if the existing profile registry keys are damaged beyond repair.
+
+Archiving older emails to an online archive mailbox reduces the size of the local data file, significantly improving Outlook's startup time and responsiveness.
+
+Antivirus software that actively scans incoming and outgoing email traffic can sometimes interfere with Outlook processes, leading to intermittent software crashes.
+
+The corporate virtual private network provides secure, encrypted access to internal network resources for employees working remotely or traveling globally.
+
+VPN authentication failures often stem from expired active directory passwords or unsynchronized multi-factor authentication tokens failing to validate.
+
+Users experiencing frequent VPN disconnections should test their local internet connection stability, as momentary drops in Wi-Fi signal will sever the secure tunnel.
+
+The VPN client software requires administrative privileges to install updates; therefore, the helpdesk deploys these updates centrally via endpoint management tools.
+
+Split tunneling is configured on the VPN to route internal corporate traffic through the secure connection while allowing general internet traffic to bypass it.
+
+If the VPN client displays a server unreachable error, the user may be operating behind a restrictive guest network firewall that blocks standard secure ports.
+
+Transitioning the VPN protocol from datagram protocols to transmission control protocols can sometimes bypass restrictive hotel or airport network firewalls.
+
+Clearing the local DNS cache using the command prompt is a common troubleshooting step when a user connects to the VPN but cannot resolve internal server names.
+
+Hardware tokens or digital machine certificates installed on the user's laptop are used in conjunction with credentials to establish a zero-trust VPN connection.
+
+Unresponsive wireless keyboards and mice are most frequently caused by depleted batteries or severe radio interference from other nearby wireless devices.
+
+When troubleshooting a Bluetooth peripheral, removing the device from the operating system settings and re-pairing it establishes a fresh connection protocol.
+
+Wireless peripheral dongles should be plugged directly into the laptop chassis rather than a USB hub to minimize input latency and connection drops.
+
+If a wired keyboard fails to register keystrokes, the user should test the device in an alternate port to rule out a faulty motherboard controller interface.
+
+Sticky or repeating keys are often the result of physical debris or liquid damage beneath the keycaps, requiring hardware replacement rather than software troubleshooting.
+
+Accessibility features can inadvertently cause keyboards to ignore brief or repeated keystrokes, confusing users into thinking the hardware is fundamentally broken.
+
+Updating the specific peripheral drivers through the manufacturer's configuration software can resolve erratic mouse pointer movements or unresponsive custom buttons.
+
+Ergonomic keyboards and vertical mice are available for request through the IT catalog for employees requiring reasonable accommodations for repetitive strain injuries.
+
+A completely unresponsive trackpad on a laptop can sometimes be resolved by verifying that the function key toggle for trackpad disablement was not accidentally pressed.
+
+Unified communications headsets are standard issue for all employees, designed to integrate seamlessly with enterprise desktop communication clients.
+
+Audio input issues where a user cannot be heard on a call often occur when the operating system defaults to the laptop's built-in microphone instead of the headset.
+
+Users can verify their headset functionality by accessing the device settings within their conferencing application and utilizing the integrated test call feature.
+
+Static or crackling audio in a wireless headset is typically indicative of low battery levels or the user moving beyond the effective range of the base station.
+
+USB headsets that are not recognized by the computer may require the user to manually uninstall the universal serial bus controllers in the device manager and reboot.
+
+Firmware updates for enterprise headsets are deployed via proprietary vendor software to ensure compatibility with the latest voice-over-IP communication standards.
+
+If a headset's inline mute button fails to sync with the mute status on the desktop application, a soft reset of the headset hardware is generally recommended.
+
+For hygiene and hardware longevity, users are advised to wipe down their headset earpads periodically and store them on a dedicated stand when not in use.
+
+Acoustic shock protection is a built-in feature of corporate headsets, preventing sudden spikes in volume from causing hearing damage during continuous use.
+
+The immediate protocol for a lost or stolen company-issued mobile device is to report the incident to the IT security team to mitigate potential data breaches.
+
+Upon notification of a lost device, the helpdesk utilizes mobile device management software to initiate a remote lock command, preventing unauthorized access.
+
+If the device cannot be recovered within twenty-four hours, a remote wipe command is executed to permanently erase all corporate and personal data stored on the hardware.
+
+Users must contact their cellular carrier independently to suspend the SIM card services if the company phone was provisioned with a personal cellular plan.
+
+Finding a lost device is sometimes possible using native operating system tracking features if location services were enabled prior to the hardware being misplaced.
+
+An incident report detailing the circumstances of the loss must be submitted to the human resources and IT departments prior to the procurement of a replacement mobile device.
+
+Replacement phones are provisioned via automated enrollment programs that push all required security profiles and corporate applications upon the initial device boot.
+
+Users who lose a company phone equipped with an active multi-factor authentication app must have their authentication sessions revoked and reset by an administrator immediately.
+
+Employees may be held liable for the hardware replacement cost if a company phone is lost repeatedly due to documented negligence or failure to follow security policies.
+
+Mapping a network drive provides users with a persistent, assigned drive letter in the file explorer that points to a specific shared folder on a remote file server.
+
+To map a drive manually, users must know the exact universal naming convention path of the share, which follows the format of double backslashes followed by the server and share name.
+
+Authentication failures during drive mapping usually mean the user's active directory security group lacks the necessary read or write permissions for the target folder.
+
+When working remotely without an active VPN connection, mapped network drives will display a red indicator, showing that the local machine cannot establish a route to the internal file server.
+
+Group policy objects are heavily utilized by the infrastructure team to automatically map departmental network drives to users' machines upon a successful network logon.
+
+If a dynamically mapped drive fails to appear, running a group policy update command in the terminal will force the local machine to refresh its directory settings.
+
+Mac users connect to network file shares using the server message block protocol by accessing the connection dialog natively built into the finder application.
+
+Network drives that prompt for credentials upon every reboot require the user to actively save their credentials within the operating system's security prompt.
+
+Attempting to map a drive letter that is already reserved by a local USB storage device or an existing network share will result in a path allocation error.
+
+Disconnecting an obsolete network drive is achieved by right-clicking the drive in the file explorer and selecting the disconnect option, which clears the registry mapping entirely.

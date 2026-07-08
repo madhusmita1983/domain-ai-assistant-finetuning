@@ -1,0 +1,252 @@
+[
+  {
+    "prompt": "What is the primary role of the IT Helpdesk in the company?",
+    "chosen response": "The IT Helpdesk serves as the single point of contact (SPOC) for all end-user technical inquiries, incidents, and service requests within the enterprise environment[cite: 2].",
+    "rejected response": "The IT Helpdesk is just there to fix your computer when it breaks and reset your password."
+  },
+  {
+    "prompt": "How should I report an issue to the IT Helpdesk?",
+    "chosen response": "You can communicate via the self-service portal, email, or telephone, and all inbound communications must be logged immediately into the IT Service Management (ITSM) platform as a distinct and trackable ticket[cite: 3].",
+    "rejected response": "Just catch an IT guy in the hallway or send them a direct message on Slack."
+  },
+  {
+    "prompt": "What is considered an Incident?",
+    "chosen response": "An Incident represents an unplanned interruption or degradation to an IT service[cite: 4].",
+    "rejected response": "An incident is whenever you want a new piece of software installed on your machine."
+  },
+  {
+    "prompt": "What is a Service Request?",
+    "chosen response": "Service Requests are formal requests from a user for a new hardware or software provision[cite: 4].",
+    "rejected response": "A service request is when the server crashes and you need someone to fix it immediately."
+  },
+  {
+    "prompt": "What do SLAs dictate?",
+    "chosen response": "Service Level Agreements (SLAs) dictate the maximum allowable time for first response and final resolution based on the assigned priority matrix of impact and urgency[cite: 5].",
+    "rejected response": "SLAs are just rough guidelines for when IT might get around to your ticket."
+  },
+  {
+    "prompt": "What happens during a Priority 1 (Critical) incident?",
+    "chosen response": "Priority 1 incidents require a response within 15 minutes and continuous bridge calls between engineering teams until resolution is achieved[cite: 6, 7].",
+    "rejected response": "For a Priority 1 incident, IT will escalate it to the manager and email you within 24 hours."
+  },
+  {
+    "prompt": "Why is accurate ticket categorization important?",
+    "chosen response": "Effective triage begins with accurate categorization and sub-categorization of the ticket to ensure automated routing reaches the appropriate Tier 2 or Tier 3 resolver groups if escalation becomes necessary[cite: 9].",
+    "rejected response": "It doesn't really matter how you categorize it, IT sees all the tickets anyway."
+  },
+  {
+    "prompt": "What information must be captured in initial ticket notes?",
+    "chosen response": "Helpdesk technicians must capture complete diagnostic information in the initial ticket notes, including the user's workstation hostname, IP address, operating system build, and exact error codes presented on the screen[cite: 10].",
+    "rejected response": "Technicians just need to write down the user's name and a brief description like 'computer broken'."
+  },
+  {
+    "prompt": "How are duplicate tickets handled?",
+    "chosen response": "Duplicate tickets reporting the same systemic issue should be linked to a unified Parent Problem ticket to prevent redundant troubleshooting and streamline mass communication[cite: 11].",
+    "rejected response": "Duplicate tickets are immediately deleted so they don't clog up the queue."
+  },
+  {
+    "prompt": "What must a technician do when resolving an issue?",
+    "chosen response": "Upon resolving an issue, the technician must document the root cause and the specific technical remediation steps taken before transitioning the ticket state to Resolved[cite: 12].",
+    "rejected response": "Just close the ticket and move on to the next one to keep the numbers up."
+  },
+  {
+    "prompt": "How long does a ticket stay in a Resolved state?",
+    "chosen response": "Tickets remain in a Resolved state for three consecutive business days to allow end-user verification[cite: 13].",
+    "rejected response": "Tickets stay resolved forever unless the user opens a brand new one."
+  },
+  {
+    "prompt": "What happens if I reject a ticket resolution?",
+    "chosen response": "If the user rejects the resolution, the ticket automatically reverts to In Progress and the SLA timers resume[cite: 14].",
+    "rejected response": "If you reject it, you have to call the helpdesk manager to complain."
+  },
+  {
+    "prompt": "What is the function of Active Directory (AD)?",
+    "chosen response": "Active Directory (AD) serves as the authoritative directory service for domain authentication, endpoint management via Group Policy Objects (GPOs), and structural resource access control[cite: 16].",
+    "rejected response": "Active Directory is just the company's internal phone book and email list."
+  },
+  {
+    "prompt": "What is required before a password reset?",
+    "chosen response": "Technicians must strictly verify user identity via a secondary verification method, such as an SMS one-time passcode or direct manager confirmation, prior to resetting any credentials[cite: 18].",
+    "rejected response": "As long as you know your username, they will reset your password right away over the phone."
+  },
+  {
+    "prompt": "Why might an Active Directory account repeatedly lock out?",
+    "chosen response": "Repeated lockouts frequently indicate stale credentials cached in mobile devices or background services[cite: 19].",
+    "rejected response": "It usually means someone is actively trying to hack into your computer from the outside."
+  },
+  {
+    "prompt": "How are file share permissions granted?",
+    "chosen response": "Role-Based Access Control (RBAC) dictates that users are assigned to specific Security Groups rather than receiving direct, localized permissions to file shares, databases, or applications[cite: 20].",
+    "rejected response": "IT will just right-click the folder and add your name to the permissions list."
+  },
+  {
+    "prompt": "What is the benefit of the Single Sign-On (SSO) provider?",
+    "chosen response": "The enterprise utilizes a Single Sign-On (SSO) provider to minimize password fatigue and centralize access logging for auditing purposes[cite: 21, 22].",
+    "rejected response": "SSO is used so that IT can see your passwords and log into your accounts if needed."
+  },
+  {
+    "prompt": "When is Multi-Factor Authentication (MFA) required?",
+    "chosen response": "Multi-Factor Authentication (MFA) is strictly enforced for all external access to corporate resources[cite: 24].",
+    "rejected response": "MFA is only required if you are a manager or working in the finance department."
+  },
+  {
+    "prompt": "What should I do if I get a new mobile phone for MFA?",
+    "chosen response": "Users replacing or wiping their mobile devices must contact the helpdesk to clear their legacy MFA hardware bindings in the administrative portal before they can register a new authenticator application[cite: 25].",
+    "rejected response": "Just download the app on your new phone and it will automatically sync up."
+  },
+  {
+    "prompt": "What is the offline fallback method for MFA?",
+    "chosen response": "In scenarios where a user lacks reliable mobile connectivity for push notifications, hardware tokens such as FIDO2 security keys can be provisioned as a fallback, offline authentication method[cite: 26].",
+    "rejected response": "If you don't have cell service, you just can't log in that day."
+  },
+  {
+    "prompt": "What is an MFA fatigue attack?",
+    "chosen response": "Suspicious MFA fatigue attacks occur when an end-user receives multiple unprompted approval requests in rapid succession, which must be immediately escalated to the Security Operations Center (SOC)[cite: 27].",
+    "rejected response": "It's when you get tired of typing in your password and request to have MFA disabled."
+  },
+  {
+    "prompt": "Why don't I get prompted for MFA when I'm in the office?",
+    "chosen response": "Conditional Access policies are configured to bypass the MFA prompt only when devices are connected to trusted internal network subnets[cite: 28].",
+    "rejected response": "The office Wi-Fi is broken and doesn't support the MFA popup windows."
+  },
+  {
+    "prompt": "What protocols does the VPN use?",
+    "chosen response": "The corporate Virtual Private Network (VPN) utilizes IPsec and SSL/TLS protocols to establish secure, heavily encrypted tunnels[cite: 30].",
+    "rejected response": "The VPN uses basic unencrypted proxy connections to save bandwidth."
+  },
+  {
+    "prompt": "What causes common VPN connectivity failures?",
+    "chosen response": "Common VPN connectivity failures often stem from local ISP-level port blocking, stale DNS caches on the router, or expired local machine certificates[cite: 31].",
+    "rejected response": "VPN failures only happen when the main corporate servers are completely down."
+  },
+  {
+    "prompt": "What does split-tunneling do for the VPN?",
+    "chosen response": "Split-tunneling is enabled to route standard internet traffic directly through the user's local ISP, reserving dedicated VPN bandwidth exclusively for secure internal corporate resources[cite: 32, 33].",
+    "rejected response": "Split-tunneling sends half your data to one server and half to another to speed up your internet."
+  },
+  {
+    "prompt": "How do you troubleshoot VPN latency?",
+    "chosen response": "When troubleshooting latency over the VPN, technicians should first execute trace route and continuous ping tests to distinguish between localized home network congestion and corporate gateway bottlenecks[cite: 34, 35].",
+    "rejected response": "Just reinstall the VPN client, that fixes latency every time."
+  },
+  {
+    "prompt": "What should I do if the VPN client fails to initialize?",
+    "chosen response": "Repairing the virtual network adapter drivers within the Device Manager or clearing the client's cached connection profiles frequently resolves the underlying software conflict[cite: 36].",
+    "rejected response": "You probably need a brand new laptop if the VPN won't open."
+  },
+  {
+    "prompt": "How can I fix a localized network drop while in the office?",
+    "chosen response": "End-users experiencing localized network drops on corporate premises should be instructed to physically undock and redock their machines to refresh the Dynamic Host Configuration Protocol (DHCP) lease[cite: 38].",
+    "rejected response": "Turn off your Wi-Fi and use your phone as a hotspot instead."
+  },
+  {
+    "prompt": "How does the corporate wireless network authenticate devices?",
+    "chosen response": "Wireless connectivity in corporate offices operates on an 802.1X authentication framework, requiring valid machine and user certificates to join the secure, hidden SSID[cite: 39].",
+    "rejected response": "You just select 'Corporate_Guest' and type in the password on the whiteboard."
+  },
+  {
+    "prompt": "What is the first step to fix a 'Server IP address could not be found' error?",
+    "chosen response": "Flushing the local DNS cache via the command prompt is the standard first-line remediation step[cite: 40, 41].",
+    "rejected response": "You need to factory reset your internet router."
+  },
+  {
+    "prompt": "How do you troubleshoot inaccessible internal web applications?",
+    "chosen response": "Verifying system-level proxy server settings and ensuring the application URL is explicitly listed in the proxy bypass exceptions is a critical diagnostic step[cite: 42].",
+    "rejected response": "Internal web apps go down all the time, just try again tomorrow."
+  },
+  {
+    "prompt": "What causes intermittent drops in VoIP calls?",
+    "chosen response": "Intermittent drops in Voice over IP (VoIP) softphone calls are generally symptomatic of network jitter or packet loss on the transport layer[cite: 43].",
+    "rejected response": "Your microphone is probably muted or broken."
+  },
+  {
+    "prompt": "How are new laptops configured?",
+    "chosen response": "Standard hardware provisioning relies on a zero-touch deployment model, utilizing mobile device management profiles to push baseline configurations, policies, and software over the air upon the machine's initial boot sequence[cite: 45].",
+    "rejected response": "IT has to sit with every laptop for 3 hours and manually install Windows from a USB drive."
+  },
+  {
+    "prompt": "What is required if a laptop motherboard is replaced?",
+    "chosen response": "If a motherboard is replaced or the BIOS is updated, the helpdesk must retrieve the 48-digit BitLocker recovery key from Active Directory to unlock the encrypted volume[cite: 46].",
+    "rejected response": "The user will lose all their data and have to start fresh if the motherboard is replaced."
+  },
+  {
+    "prompt": "How do you fix external webcam flickering?",
+    "chosen response": "Peripherals such as docking stations, external webcams, and ultra-wide monitors often require manual firmware updates to resolve persistent display flickering or USB-C power negotiation failures[cite: 47].",
+    "rejected response": "Flickering means the camera lens is dirty, try wiping it off."
+  },
+  {
+    "prompt": "What happens if a device has a continuous Blue Screen of Death loop?",
+    "chosen response": "In the event of a catastrophic hardware failure, such as continuous Blue Screen of Death (BSOD) loops, the device is subject to standard Return Merchandise Authorization (RMA) procedures[cite: 48].",
+    "rejected response": "IT will just reformat the drive and give it back to you exactly as it is."
+  },
+  {
+    "prompt": "What is ITAM?",
+    "chosen response": "IT Asset Management (ITAM) protocols dictate that all deployed, recovered, missing, or decommissioned hardware must have its serial number and lifecycle status meticulously updated in the centralized asset database[cite: 49].",
+    "rejected response": "ITAM is the software we use to track your keystrokes and web history."
+  },
+  {
+    "prompt": "Can I install my own software on my work computer?",
+    "chosen response": "Enterprise applications are packaged and deployed centrally via endpoint configuration software, restricting end-users from requiring local administrator privileges to install unapproved software[cite: 51].",
+    "rejected response": "Yes, you can install anything you want as long as it is for work purposes."
+  },
+  {
+    "prompt": "How are OS security updates deployed?",
+    "chosen response": "Software patch management prioritizes zero-day vulnerabilities and critical OS security updates that are deployed systematically across tiered testing rings before general release to the company[cite: 52].",
+    "rejected response": "Updates are pushed to everyone at the exact same time on Friday afternoons."
+  },
+  {
+    "prompt": "What should a technician do if a background software installation fails?",
+    "chosen response": "The technician must analyze the deployment logs locally on the machine to identify missing prerequisites, such as required .NET frameworks or pending system reboots[cite: 53].",
+    "rejected response": "Just keep clicking 'Install' until it eventually works."
+  },
+  {
+    "prompt": "How are legacy applications with older Java versions handled?",
+    "chosen response": "Legacy applications requiring specific, older Java Runtime Environments (JRE) must be strictly isolated or run in browser compatibility modes to prevent conflicts[cite: 54].",
+    "rejected response": "We update all legacy apps automatically so you don't need old Java anymore."
+  },
+  {
+    "prompt": "What happens if unauthorized software is detected?",
+    "chosen response": "Unauthorized software installations detected by endpoint monitoring tools trigger automated high-priority alerts, requiring the helpdesk to perform immediate remote uninstallation and issue formal acceptable use policy reminders[cite: 55].",
+    "rejected response": "IT just ignores it unless it's taking up too much hard drive space."
+  },
+  {
+    "prompt": "What manages shared department mailboxes?",
+    "chosen response": "Shared department mailboxes and dynamic distribution lists are managed automatically via Active Directory group synchronization[cite: 57, 58].",
+    "rejected response": "You have to email the CEO to get access to a shared mailbox."
+  },
+  {
+    "prompt": "How should a bounce-back email be analyzed?",
+    "chosen response": "Non-Delivery Reports (NDRs) or bounce-backs must be analyzed by examining the SMTP error codes to differentiate between invalid recipient addresses, strict mailbox quota limits, and external spam filter blocks[cite: 59].",
+    "rejected response": "A bounce-back always means the person you are emailing has blocked you."
+  },
+  {
+    "prompt": "How is local data backed up?",
+    "chosen response": "Cloud storage solutions provide seamless folder redirection for user profiles, ensuring that local Desktop, Document, and Picture folders are automatically backed up in real-time to prevent catastrophic data loss[cite: 62].",
+    "rejected response": "You have to manually copy your files to a USB thumb drive every Friday."
+  },
+  {
+    "prompt": "What happens to emails older than two years?",
+    "chosen response": "Aggressive email archiving policies automatically migrate messages older than two years to an online-only archive, which users can access directly within their mail client[cite: 63].",
+    "rejected response": "Emails older than two years are permanently deleted to save server space."
+  },
+  {
+    "prompt": "What should I do if I get a phishing email?",
+    "chosen response": "Suspected phishing emails must never be forwarded natively; users are instructed to use the integrated reporting button, which routes it to the security team for automated sandbox detonation[cite: 65, 66].",
+    "rejected response": "Forward it to all your coworkers so they know to watch out for it."
+  },
+  {
+    "prompt": "What happens when malicious behavior is detected on a workstation?",
+    "chosen response": "Endpoint Detection and Response (EDR) alerts indicating malicious behavior result in the automatic, network-level isolation of the host workstation, pending a thorough forensic review[cite: 67].",
+    "rejected response": "The computer will just beep loudly until you run an antivirus scan."
+  },
+  {
+    "prompt": "How is the Knowledge Base maintained?",
+    "chosen response": "Technicians are expected to follow the Knowledge-Centered Service (KCS) methodology, creating or updating articles as a direct byproduct of solving user tickets[cite: 69].",
+    "rejected response": "The Knowledge Base is written by a dedicated team of technical writers once a year."
+  },
+  {
+    "prompt": "How often should SOPs be audited?",
+    "chosen response": "Standard Operating Procedures (SOPs) for routine administrative tasks must be reviewed and audited quarterly to ensure alignment with shifting infrastructure[cite: 70].",
+    "rejected response": "SOPs never need to be updated once they are written."
+  }
+]
