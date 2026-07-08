@@ -228,7 +228,7 @@ Advantages:
 
 # 10. Training Screenshots / Logs
 ## STAGE 1: PDF RAW TEXT TRAINING Screenshots
-![STAGE 1: PDF RAW TEXT TRAINING Screenshots](images/1_PDF RAW TEXT TRAINING_1.png)
+![images](images/1_PDF RAW TEXT TRAINING_1.png)
 ![STAGE 1: PDF RAW TEXT TRAINING Screenshots](images/1_PDF RAW TEXT TRAINING_2.png)
 
 STAGE 2 - INSTRUCTION FINE-TUNING RESULTS
