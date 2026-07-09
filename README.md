@@ -2,7 +2,7 @@
 
 ## 1. Project Title
 
-**Enterprise IT Helpdesk Assistant using Parameter-Efficient Fine-Tuning (PEFT)**
+** IT Helpdesk LLM Fine-Tuning using LoRA, QLoRA, SFT, and DPO **
 
 ---
 
